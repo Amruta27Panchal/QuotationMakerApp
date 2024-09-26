@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusinessRegister">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/BusinessName_id_updatepg"
+                android:layout_width="378dp"
+                android:layout_height="47dp"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="@color/dark_teal"
+                android:background="@drawable/border_layout"
+                android:textSize="20sp"
+                android:hint="Business Name"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+
+            <EditText
+                android:id="@+id/OwnerName_id_updatepg"
+                android:layout_width="378dp"
+                android:layout_height="47dp"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border_layout"
+                android:textSize="20sp"
+                android:hint="Owner Name"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+
+            <EditText
+                android:id="@+id/Emailid_updatepg"
+                android:layout_width="378dp"
+                android:layout_height="47dp"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="16dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/border_layout"
+                android:textSize="20sp"
+                android:hint="Email Id"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+
+            <EditText
+                android:id="@+id/contactno_id_updatepg"
+                android:layout_width="378dp"
+                android:layout_height="47dp"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="16dp"
+                android:inputType="phone"
+                android:background="@drawable/border_layout"
+                android:textSize="20sp"
+                android:hint="Contact number"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+
+            <EditText
+                android:id="@+id/Address_id_updatepg"
+                android:layout_width="378dp"
+                android:layout_height="47dp"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border_layout"
+                android:textSize="20sp"
+                android:hint="Address"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+
+            <EditText
+                android:id="@+id/gstin_id_updatepg"
+                android:layout_width="378dp"
+                android:layout_height="47dp"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"
+                android:background="@drawable/border_layout"
+                android:textSize="20sp"
+                android:hint="GSTIN / PAN"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+
+            <EditText
+                android:id="@+id/Businessno_id_updatepg"
+                android:layout_width="378dp"
+                android:layout_height="47dp"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border_layout"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:hint="Business Regsiter number"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+
+            <EditText
+                android:id="@+id/businesscategory_id_updatepg"
+                android:layout_width="378dp"
+                android:layout_height="47dp"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border_layout"
+                android:textSize="20sp"
+                android:hint="Business Category"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal"
+                tools:ignore="ExtraText">
+
+
+                <ImageView
+                    android:id="@+id/Logoupload_id_updatepg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="37dp"
+                    android:contentDescription="Logo"
+                    android:onClick="uploadlogo"
+                    android:src="@drawable/upload_logo" />
+
+
+                <ImageView
+                    android:id="@+id/signtureupload_id_updatepg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginRight="37dp"
+                    android:contentDescription="Logo"
+                    android:onClick="uploadsign"
+                    android:src="@drawable/upload_signature" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/savebtn_id_infopg"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:onClick="saveBusinessInfo"
+                android:src="@drawable/savebtn" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

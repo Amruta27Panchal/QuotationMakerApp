@@ -1,0 +1,18 @@
+<resources>
+    <string name="QuotationMaker">QuotationMaker</string>
+    <string name="sign_up" />
+    <string name="default_web_client_id">521941892628-s400asniglhji58snb4e0q4g7pfb719a.apps.googleusercontent.com</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="email">Email :</string>
+    <string name="effortless_billing_solution">Effortless Billing Solution</string>
+    <string name="welcome">WELCOME,</string>
+    <string name="sign_up_to_continue">Sign up to continue..</string>
+    <string name="name">Name :</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="toggle_password_visibility">Toggle password visibility</string>
+    <string name="enter_mobile_no">Enter Mobile no.</string>
+    <string name="password">Password :</string>
+    <string name="mobile">Mobile :</string>
+    <string name="continue_with">continue_with</string>
+</resources>

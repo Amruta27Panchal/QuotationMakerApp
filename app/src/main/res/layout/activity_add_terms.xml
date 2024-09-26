@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTerms">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/product_qty"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_layout"
+            android:text="Quotation"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/prod_description"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_layout"
+            android:hint="Terms and condition"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:paddingTop="6dp"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50mm"
+            android:src="@drawable/add_btn" />
+    </LinearLayout>
+
+</LinearLayout>

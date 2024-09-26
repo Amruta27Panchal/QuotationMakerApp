@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddCustomerPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/cust_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Name"
+            android:background="@drawable/border_layout"
+            android:inputType="textPersonName"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/company_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_layout"
+            android:hint="Company Name"
+            android:inputType="text"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/cut_pg_email"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_layout"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/cust_mobile"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="55dp"
+            android:background="@drawable/border_layout"
+            android:hint="Mobile"
+            android:inputType="phone"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/cust_address1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="55dp"
+            android:background="@drawable/border_layout"
+            android:hint="Address 1"
+            android:inputType="textPostalAddress"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/cust_address2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="55dp"
+            android:background="@drawable/border_layout"
+            android:hint="Address 2"
+            android:inputType="textPostalAddress"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/et_additional_info"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_layout"
+            android:hint="Additional Info"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="5"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/cust_page_add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="12mm"
+            android:src="@drawable/add_btn" />
+    </LinearLayout>
+</LinearLayout>

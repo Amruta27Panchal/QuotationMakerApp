@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TestApp" parent="Theme.Material3.Light.NoActionBar">
+       <!-- Customize your theme here -->
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/lightgreen</item>
+        <item name="colorSecondaryVariant">@color/dark_teal</item>
+
+        <!-- Enable Material Design components -->
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MaterialComponents.Light</item>
+    </style>
+
+    <style name="Theme.TestApp" parent="Base.Theme.TestApp" />
+
+    <!-- In res/values/themes.xml -->
+    <style name="AppTheme.AddCustomerPage" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/dark_teal</item> <!-- Teal Blue for ActionBar -->
+        <item name="colorPrimaryDark">@color/dark_teal</item> <!-- Darker shade for status bar -->
+        <item name="colorAccent">#FFFFFF</item> <!-- Accent color -->
+    </style>
+
+    <style name="AppTheme.BusinessRegister" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/dark_teal</item> <!-- Teal Blue for ActionBar -->
+        <item name="colorPrimaryDark">@color/dark_teal</item> <!-- Darker shade for status bar -->
+        <item name="colorAccent">#FFFFFF</item> <!-- Accent color -->
+    </style>
+
+    <style name="AppTheme.BusinessUpdate" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/dark_teal</item> <!-- Teal Blue for ActionBar -->
+        <item name="colorPrimaryDark">@color/dark_teal</item> <!-- Darker shade for status bar -->
+        <item name="colorAccent">#FFFFFF</item> <!-- Accent color -->
+    </style>
+
+    <style name="AppTheme.Customer_List" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/dark_teal</item> <!-- Teal Blue for ActionBar -->
+        <item name="colorPrimaryDark">@color/dark_teal</item> <!-- Darker shade for status bar -->
+        <item name="colorAccent">#FFFFFF</item> <!-- Accent color -->
+    </style>
+
+    <style name="AppTheme.ProductList" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/dark_teal</item> <!-- Teal Blue for ActionBar -->
+        <item name="colorPrimaryDark">@color/dark_teal</item> <!-- Darker shade for status bar -->
+        <item name="colorAccent">#FFFFFF</item> <!-- Accent color -->
+    </style>
+
+    <style name="AppTheme.AddProduct" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/dark_teal</item> <!-- Teal Blue for ActionBar -->
+        <item name="colorPrimaryDark">@color/dark_teal</item> <!-- Darker shade for status bar -->
+        <item name="colorAccent">#FFFFFF</item> <!-- Accent color -->
+    </style>
+
+    <style name="AppTheme.TermsList" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/dark_teal</item> <!-- Teal Blue for ActionBar -->
+        <item name="colorPrimaryDark">@color/dark_teal</item> <!-- Darker shade for status bar -->
+        <item name="colorAccent">#FFFFFF</item> <!-- Accent color -->
+    </style>
+
+    <style name="AppTheme.AddTerms" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/dark_teal</item> <!-- Teal Blue for ActionBar -->
+        <item name="colorPrimaryDark">@color/dark_teal</item> <!-- Darker shade for status bar -->
+        <item name="colorAccent">#FFFFFF</item> <!-- Accent color -->
+    </style>
+</resources>

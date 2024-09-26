@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Customer_List">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/SearchView_add_customer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_layout"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="Search for Customer Here" />
+
+    <ImageView
+        android:id="@+id/addcustomer_btn"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="544dp"
+        android:onClick="AddCustomer"
+        app:layout_constraintEnd_toEndOf="@+id/recycleView"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintTop_toBottomOf="@+id/SearchView_add_customer"
+        app:srcCompat="@drawable/baseline_add_circle_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

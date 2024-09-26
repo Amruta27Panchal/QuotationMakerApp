@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/prod_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Product Name"
+            android:textColorHint="@color/black"
+            android:background="@drawable/border_layout"
+            android:inputType="textPersonName"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/prod_Price"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_layout"
+            android:hint="Rate / Price"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/product_qty"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_layout"
+            android:hint="Quantity"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/prod_description"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="89dp"
+            android:background="@drawable/border_layout"
+            android:hint="Description"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/add_prod_btn_addpage"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:onClick="addProduct"
+            android:layout_marginTop="45mm"
+            android:src="@drawable/add_btn" />
+    </LinearLayout>
+
+</LinearLayout>

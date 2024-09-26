@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <!-- Customer Name -->
+    <TextView
+        android:id="@+id/customerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <!-- Customer Email -->
+    <TextView
+        android:id="@+id/customerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Email"
+        android:textSize="14sp"
+        android:paddingBottom="8dp" />
+
+    <!-- Buttons for Edit and Delete Actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <!-- Edit Button -->
+        <Button
+            android:id="@+id/editCustomerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:padding="8dp" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/deleteCustomerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:padding="8dp"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+</LinearLayout>

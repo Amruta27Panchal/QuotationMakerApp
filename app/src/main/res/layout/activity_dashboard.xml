@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Dashboard">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="381dp"
+        android:layout_height="310dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dashboard1" />
+
+
+    <ImageView
+        android:id="@+id/customer_btn_id"
+        android:layout_width="63dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="212dp"
+        android:onClick="MoveToCustomer"
+        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@drawable/customer"
+        tools:ignore="UnknownId" />
+
+
+    <ImageView
+        android:id="@+id/product_btn_id"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="212dp"
+        android:onClick="MoveToProduct"
+        app:layout_constraintEnd_toStartOf="@+id/terms_btn_id"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toEndOf="@+id/customer_btn_id"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@drawable/product" />
+
+
+    <ImageView
+        android:id="@+id/terms_btn_id"
+        android:layout_width="59dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="MoveToTerms"
+        app:layout_constraintEnd_toStartOf="@+id/business_btn_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/terms" />
+
+
+    <ImageView
+        android:id="@+id/business_btn_id"
+        android:layout_width="60dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="MoveToBusiness"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@drawable/business" />
+
+
+    <TextView
+        android:id="@+id/cust"
+        android:layout_width="63dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="20dp"
+        android:text="Customer"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="59dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="20dp"
+        android:text="Product"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Terms"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Business"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="152dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="490dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"> <!-- Changed orientation to vertical -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/new_quotation_id_dash"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/create_new_quot" />
+
+
+                <ImageView
+                    android:id="@+id/quoatation_list_id_dash"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/manage_quotation" />
+            </LinearLayout>
+
+            <!-- Add more ImageViews below -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/new_invoice_id_dash"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/new_invoice" />
+
+                <ImageView
+                    android:id="@+id/invoice_list_id_dash"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/invoice_list" />
+
+            </LinearLayout>
+            <!-- Add more ImageViews below -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/settings_id_dash"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/settingss" />
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/about_us"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
